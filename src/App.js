@@ -1,34 +1,26 @@
 import React from 'react';
 import './App.css';
 
-import './css/styles.css'; //From template
+//From template
+import './css/styles.css';
 
+import SebNav from './components/SebNav';
 import SebFooter from './components/SebFooter';
 
 
 
 function App() {
+  const navItems = [
+    {link:"#blog", text: "blog"},
+    {link:"#about", text: "About"},
+    {link:"#contact", text: "Contact"},
+  ];
 
   return (
     <div className="App">
     <body id="page-top">
-        {/*  Navigation-- */}
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Sebastian Simmons' Website</a>
-                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Blog</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <SebNav items={navItems} />
+
         {/*  Masthead-- */}
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
@@ -48,7 +40,7 @@ function App() {
             </div>
         </header>
         {/*  Portfolio Section-- */}
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="blog">
             <div class="container">
                 {/*  Portfolio Section Heading-- */}
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Project Blog<br/>(Coming Soon)</h2>
