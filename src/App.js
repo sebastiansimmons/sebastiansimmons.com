@@ -155,7 +155,8 @@ function App() {
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         {/*  To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-- */}
-                        <form id="contactForm" name="sentMessage" data-netlify="true">
+                        <form id="contactForm" name="sentMessage" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact" /> {/* Hidden input field for netlify */}
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Name</label>
