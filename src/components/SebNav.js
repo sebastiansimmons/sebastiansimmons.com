@@ -8,9 +8,9 @@ export default function SebNav(props) {
     const navItems = props.items.map((item) =>  NavItem(item));
 
     return(
-      <Navbar variant="dark" collapseOnSelect  expand="md" bg="secondary" textUppercase fixedTop className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <Navbar variant="dark" collapseOnSelect  expand="md" bg="secondary" textUppercase fixedTop className="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
         <div class="container">
-          <Link to="/"><Navbar.Brand>Sebastian Simmons'</Navbar.Brand></Link>
+          <Link to="/"><Navbar.Brand>Sebastian Simmons.com</Navbar.Brand></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">

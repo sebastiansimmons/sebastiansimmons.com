@@ -3,6 +3,9 @@ import React from 'react';
 import IndexHeader from '../components/IndexHeader';
 import Portfolio from '../components/Portfolio';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Home() {
     return(
@@ -18,7 +21,7 @@ export default function Home() {
                       {/*  Icon Divider-- */}
                       <div class="divider-custom divider-light">
                           <div class="divider-custom-line"></div>
-                          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                          <div class="divider-custom-icon"><FontAwesomeIcon icon={faStar} /></div>
                           <div class="divider-custom-line"></div>
                       </div>
                       {/*  About Section Content-- */}
@@ -43,7 +46,7 @@ export default function Home() {
                       {/*  Icon Divider-- */}
                       <div class="divider-custom">
                           <div class="divider-custom-line"></div>
-                          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                          <div class="divider-custom-icon"><FontAwesomeIcon icon={faStar} /></div>
                           <div class="divider-custom-line"></div>
                       </div>
                       {/*  Contact Section Form-- */}

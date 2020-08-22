@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 import {
@@ -12,7 +11,6 @@ import {
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes }from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
