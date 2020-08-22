@@ -24,7 +24,7 @@ export default function SebNav(props) {
 
 function NavItem(props){
   return(
-    <Link to={props.link}><li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">{props.text}</a></li></Link>
+    <Link to={props.link}><li class="nav-item mx-0 mx-lg-1"><p class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">{props.text}</p></li></Link>
   );
 
 }
