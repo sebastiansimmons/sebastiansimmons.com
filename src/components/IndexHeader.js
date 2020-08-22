@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function IndexHeader(props) {
-
     return(
       <header class="masthead bg-primary text-white text-center">
           <div class="container d-flex align-items-center flex-column">

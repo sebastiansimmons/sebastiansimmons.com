@@ -5,8 +5,6 @@ import Main from './Main';
 
 import SebNav from './components/SebNav';
 import SebFooter from './components/SebFooter';
-import IndexHeader from './components/IndexHeader';
-import Portfolio from './components/Portfolio';
 
 function App() {
   const navItems = [
