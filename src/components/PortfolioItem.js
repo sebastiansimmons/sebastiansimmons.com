@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes }from "@fortawesome/free-solid-svg-icons";
@@ -34,12 +43,27 @@ export default function PortfolioItem(props) {
                   </div>
                   {/*  Portfolio Modal - Image-- */}
                   <img class="img-fluid rounded mb-5" src={require('../assets/img/portfolio/cabin.png')} alt="" />
-                  {/*  Portfolio Modal - Text-- */}
-                  <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                  <button class="btn btn-primary" onClick={handleClose}>
-                      Close Window
-                  </button>
               </div>
+
+              {/*  Portfolio Modal - Text-- */}
+              <Container margin={"4px"}>
+              <p class="mb-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              </Container>
+
+              <Router>
+                <Link to="/blog/bost">
+                <button class="btn btn-primary" >
+                    Close Window
+                </button>
+                </Link>
+
+                <Switch>
+                  <Route path="/blog/bost">
+                    <BlogPost />
+                  </Route>
+                </Switch>
+              </Router>
+
           </div>
           </div>
            </Modal.Body>
@@ -59,4 +83,8 @@ export default function PortfolioItem(props) {
             </i>
       </div>
     );
+}
+
+function BlogPost() {
+  return <h2>BLOGPOST</h2>;
 }
