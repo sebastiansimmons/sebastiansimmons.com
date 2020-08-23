@@ -22,7 +22,7 @@ export default function IndexHeader(props) {
               <p class="masthead-subheading font-weight-light mb-0">Backend Engineer - Serverless Backend - REST APIs</p>
               <p class="masthead-subheading font-weight-light mb-0">This website is a work in progress. I have continious deployment setup through github and netlify so I can push changes as I go.</p>
               <div class="text-center mt-4">
-                  <a class="btn btn-xl btn-outline-light" href={require('../assets/2020SebastianSimmonsRESUME.pdf')}>
+                  <a class="btn btn-xl btn-outline-light" href={require('../assets/2020-08-Sebastian-Simmons-Resume.pdf')}>
                       <i class="fas fa-download mr-2"></i>
                       Download My Resume
                   </a>
