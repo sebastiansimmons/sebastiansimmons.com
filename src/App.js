@@ -8,7 +8,7 @@ import SebFooter from './components/SebFooter';
 
 function App() {
   const navItems = [
-    {link:"blog", text: "blog"},
+    //{link:"blog", text: "blog"},
   ];
 
   return (
